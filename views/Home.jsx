@@ -1,5 +1,5 @@
 import React from 'react'
-import Pantalla1 from '../components/pantalla1'
+import Pantalla1 from '../components/Pantalla1'
 
 const Home = () => {
   return (
@@ -10,3 +10,4 @@ const Home = () => {
 }
 
 export default Home
+ 

@@ -1,5 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StatusBar } from 'expo-status-bar';
+import Home from './views/Home'
 
 
 export default function App() {
@@ -8,12 +10,10 @@ export default function App() {
   <>
   <NavigationContainer>
     <Stack.Navigator>
-        <Stack.Screen
-          name="Inicio" component={Home} />
-        <Stack.Screen
-          name="Login" component={Login} />
-      </Stack.Navigator>
+     <Stack.Screen name="home" options={{ headerShown: false }} component={Home}/>
+    </Stack.Navigator>
   </NavigationContainer>
+  <StatusBar style="auto" />
   </>
   );
 }
